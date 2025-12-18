@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="budget.css">
+  <title>BUDGET TRACKER</title>
+</head>
+<body>
+  <header>
+  <h1>TRACK YOUR BUDGET</h1>
+   </header>
+   <section>
+  <div class="inputs">
+    <form class="income-form">
+    <label for="income">INCOME:</label>
+    <input type="text" id="income">
+       </form>
+     <button class="income-button">SUBMIT</button>
+        <br>
+    <form class="save-form">
+    <label for="save">SAVE:</label>
+    <input type="number" id="save">
+    </form>
+    <button class="save-button">SUBMIT</button>
+     </div>
+   
+
+  <div class="htmlForInputs">
+    <p>INCOME:<span class="income js-income-html">$0</span></p>
+    <p>SAVING:<span class="saving js-saving-html">$0</span></p>
+    <p>TOTAL:<span class="total js-total-html">$0</span></p>
+  </div>
+  </section>
+
+  <section>
+  <div class="expense">
+    <h2>EXPENSES</h2>
+    <div class="categories">
+      <ul>
+        <li class="food-item js-food-item">FOOD <span class="amount-food"><input type="number" id="food"><button class="save-food js-save-food" type="button">SUBMIT</button></span></li>
+
+        <li class="js-housing-item">HOUSING <span class="amount-housing"><input type="number" name="house" id="housing"><button class="save-housing js-save-housing">SUBMIT</button></span></li>
+
+        <li class="js-shopping-item">SHOPPING <span class="amount-shopping"><input type="number" id="shopping"><button class="save-shopping js-save-shopping">SUBMIT</button></span></li>
+
+        <li class="js-cash-item">CASH <span class="amount-cash"><input type="number" id="cash"><button class="save-cash js-save-cash">SUBMIT</button></span></li>
+
+        <li class="js-utility-item">UTILTY <span class="amount-utils"><input type="number" name="utils" id="utility"><button class="save-utility js-save-utility">SUBMIT</button></span></li>
+      </ul>
+    </div>
+    <p>TOTAL EXPENSE: <span class="total-expense js-total-expense">$0</span></p>
+  </div>
+</section>
+  <script type="module" src="budget.js"></script>
+</body>
+</html>
